@@ -20,6 +20,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="{% static "vendor/icofont/icofont.min.css" %}">
 
   <!-- Custom styles for this template -->
   <link rel='stylesheet' href="{% static "styles/style.css" %}">
@@ -31,7 +32,7 @@
       background-position: center;
       background-size: cover;
       /* background-color: #eec0c6; */
-      background-image: linear-gradient(rgb(255, 255, 255, 0.65),rgb(109, 213, 237, 0.65)),
+      background-image: linear-gradient(rgb(255, 255, 255, 0.65), rgb(109, 213, 237, 0.65)),
       url("{% static 'images/bg_doodle.png' %}");
 
     }
@@ -45,7 +46,6 @@
   <section class="py-0">
     {% block content %}{% endblock %}
   </section>
-
   <!-- Footer -->
   {% block footer %}{% include 'footer.html' %}{% endblock %}
 
