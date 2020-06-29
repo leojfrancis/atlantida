@@ -83,6 +83,27 @@ h6,
 
 }
 
+.navbar{
+    background: #0b212d;
+    opacity: 0.9;
+    color:  #a2cce3;
+}
+
+.navbar div h1:first-of-type{
+    color:  #a2cce3;
+    font-size: 22px;
+}
+
+.navbar .nav-link{
+    color:  #a2cce3;
+}
+.navbar .nav-link:link{
+    border: transparent;
+    text-decoration: none;
+
+}
+
+
 .dropdown-menu {
     display: block;
     visibility: hidden;
@@ -97,7 +118,12 @@ h6,
     opacity: 1;
     transform: translateY(0px);
     transition: .5s ease all;
-    z-index: 9999;
+    z-index: 99999999999999;
+}
+
+
+#heroCarousel div div{
+    z-index: -999;
 }
 /*--------------------------------------------------------------
 # Sections General
@@ -418,6 +444,7 @@ section {
     font-size: 20px;
     padding-right: 4px;
     color: #68A4C4;
+    left: -10px;
 }
 
 .features p:last-child {
