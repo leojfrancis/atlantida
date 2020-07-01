@@ -9,6 +9,17 @@ class HomeView(View):
     def get(self, request):
         return render(request, self.template_name)
 
+class AboutView(View):
+    template_name = 'about.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+class ServicesView(View):
+    template_name = 'service.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
 
 class ProductsView(View):
     template_name = 'products.html'
@@ -17,15 +28,8 @@ class ProductsView(View):
         return render(request, self.template_name)
 
 
-class AboutView(View):
-    template_name = 'about.html'
-
-    def get(self, request):
-        return render(request, self.template_name)
-
-
-class StoreView(View):
-    template_name = 'store.html'
+class CareerView(View):
+    template_name = 'career.html'
 
     def get(self, request):
         return render(request, self.template_name)

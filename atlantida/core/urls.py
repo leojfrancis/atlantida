@@ -21,9 +21,10 @@ app_name = "core"
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
-    path('products/', views.ProductsView.as_view(), name='products'),
     path('about/', views.AboutView.as_view(), name='about'),
-    # path('store/', views.StoreView.as_view(),name='store'),
+    path('services/', views.ServicesView.as_view(), name='services'),
+    path('products/', views.ProductsView.as_view(), name='products'),
+    path('career/', views.CareerView.as_view(),name='career'),
     path('contact/', views.ContactView.as_view(), name='contact'),
 
 ]
