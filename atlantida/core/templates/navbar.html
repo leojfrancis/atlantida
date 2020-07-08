@@ -21,10 +21,10 @@
                     Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="{% url 'core:services' %}#ncs">The NCS Advantage</a>
+                    <a class="dropdown-item" href="{% url 'core:services' %}">Services</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="{% url 'core:services' %}#ncs">The NCS Advantage</a>
+                    <a class="dropdown-item" href="#">I2</a>
                 </div>
             </li>
             <li class="nav-item dropdown mx-4">
@@ -33,10 +33,19 @@
                     Products
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Products</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="dropdown-item" href="#">I1</a>
+                            <a class="dropdown-item" href="#">I2</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="dropdown-item" href="#">I3</a>
+                            <a class="dropdown-item" href="#">I4</a>
+                        </div>
+
+                    </div>
                 </div>
             </li>
             <li class="nav-item dropdown mx-4">
@@ -46,9 +55,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{% url 'core:career' %}">Career</a>
-                    <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">I1</a>
+                    <a class="dropdown-item" href="#">I2</a>
                 </div>
             </li>
             <li class="nav-item  mx-4">
