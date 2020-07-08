@@ -31,7 +31,7 @@ h4,
 h5,
 h6,
 .font-primary {
-    font-family: "Roboto", sans-serif;
+    font-family:z "Roboto", sans-serif;
 }
 
 
@@ -82,33 +82,29 @@ h6,
 @media (max-width: 575px) {
 
 }
-
 .navbar{
-    background: #0b212d;
-    opacity: 0.9;
-    /* color:  #a2cce3; */
+    background:#1E4356;
+    /* opacity: 0.9; */
     color: white;
-    border-bottom-left-radius:50%;
-    border-bottom-right-radius: 50%;
-    height: 120px;
+    height: 90px;
 }
 
 .navbar div h3:first-of-type{
-    /* color:  #a2cce3; */
-    font-size: 22px;
+    font-size: 28px;
     color: white;
-    padding-bottom: 20px;
+    margin-bottom: 0em;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
 
 .navbar .nav-link{
-    /* color:  #a2cce3; */
     color: white;
-    padding-bottom: 20px;
+    font-size: 16px;
 }
 .navbar .nav-link:link{
     border: transparent;
     text-decoration: none;
-
+    
 }
 .navbar div ul li .row{
     z-index: 999999;
@@ -133,10 +129,40 @@ h6,
     z-index: 99999999999999;
 }
 
+#hero{
+    padding: 0em;
+}
+
+#hero .carousel-inner{
+    min-height: 400px;
+    display: flex;
+}
+#hero .carousel-inner .card{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 #heroCarousel div div{
     z-index: -999;
 }
+#heroCarousel a i{
+    color: black;
+    font-size: 40px;
+}
+#heroCarousel a span{
+    display: none;
+}
+
+#heroCarousel div .card{
+    z-index: -999;
+    max-width: 100%;
+    text-align: center;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 40px;
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

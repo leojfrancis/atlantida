@@ -3,57 +3,5 @@
 {% block title %}Services{% endblock %}
 {% block content %}
 <!-- ======= Services Section ======= -->
-<section class="services">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-        <div class="icon-box icon-box-cyan">
-          <div class="icon"><i class="bx bxl-dribbble"></i></div>
-          <h4 class="title"><a href="">Audio visual</a></h4>
-          <p class="description">Our audio-visual services encompass dynamic design solutions that can be applied to
-            expand to the existing infrastructure, with ongoing support and maintenance throughout the hardware’s
-            lifespan.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <div class="icon-box icon-box-cyan">
-          <div class="icon"><i class="bx bx-file"></i></div>
-          <h4 class="title"><a href="">Wireless Networks</a></h4>
-          <p class="description">GCN is capable of performing an extensive audit for those clients who are in need of a
-            third-party project infrastructure documentation, inspection and testing to assure warranty compliance. </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon-box icon-box-cyan">
-          <div class="icon"><i class="bx bx-tachometer"></i></div>
-          <h4 class="title"><a href="">Security</a></h4>
-          <p class="description">We employ security personnel that can apprise you of the constantly changing attack
-            vectors, providing you with updated security solutions that will ensure comprehensive safety going forward.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon-box icon-box-cyan">
-          <div class="icon"><i class="bx bx-world"></i></div>
-          <h4 class="title"><a href="">Structured Cabling</a></h4>
-          <p class="description">GCN provides comprehensive services as a Communication Infrastructure Provider, having
-            the resources to design, deploy and service structured cabling environments and associated hardware.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-        <div class="icon-box icon-box-cyan">
-          <div class="icon"><i class="bx bxl-dribbble"></i></div>
-          <h4 class="title"><a href="">Power over Ethernet (PoE) Lighting</a></h4>
-          <p class="description">PoE enables highly dynamic environments that can aggregate data, interact with
-            occupants, inspire staff and allow for more workspace personalization.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Services Section -->
+{% include 'service_cards.html' %}
 {% endblock %}

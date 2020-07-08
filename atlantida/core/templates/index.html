@@ -1,84 +1,120 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<section>
+
+<section id="hero">
   <div id="heroCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#heroCarousel" data-slide-to="1"></li>
       <li data-target="#heroCarousel" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner" style="max-height: 500px;">
-      <div class="carousel-item active">
-        <img
-          src="https://img5.goodfon.com/wallpaper/nbig/f/a4/4k-uhd-background-blur-long-exposure-photography-architectur.jpg"
-          class="d-block mx-auto img-fluid" alt="...">
+    <div class="carousel-inner mx-auto" style="max-height: 500px;">
+      <div class="carousel-item active card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://c1.wallpaperflare.com/preview/30/556/55/japan-osaka-osaka-night-view-night-view.jpg"
-          class="d-block mx-auto img-fluid " alt="...">
-
+      <div class="carousel-item card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img
-          src="https://www.pixel4k.com/wp-content/uploads/2018/09/night-city-top-view-buildings-railway-4k_1538068879.jpg"
-          class="d-block mx-auto img-fluid" alt="...">
-
+      <div class="carousel-item card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
     </div>
-    <a class="carousel-control-prev" style="color: black;" href="#heroCarousel" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <!-- <span class="sr-only">Previous</span> -->
+      <i class="icofont-arrow-left"></i>
     </a>
     <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
+      <i class="icofont-arrow-right"></i>
+
     </a>
   </div>
 </section>
 
-<section class="section-bg">
-</section>
-
 <main id="main">
-  <!-- Why Us Section -->
-  <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+  <!-- ======= HOME Section ======= -->
+  <section class="services">
     <div class="container">
 
       <div class="row">
-        <div class="col-lg-6 video-box">
-          <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-          <!-- <a href="https://www.youtube.com/" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="icon-box icon-box-cyan">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title"><a href="">Quality</a></h4>
+            <p class="description">We work with finesse until we have delivered outstanding products and services that
+              we
+              are proud to showcase.</p>
+          </div>
         </div>
 
-        <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-            <h4 class="title"><a href="">HSE Statement</a></h4>
-            <p class="description">Safety is a core company value at GCN, where we combine it with communication,
-              quality, integrity and customer service. Our engineers and technicians form a cohesive team that works in
-              unison, fostering risk awareness and a safety-minded environment that spans the entire organization,
-              across all levels.</p>
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box icon-box-cyan">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="">Customer service</a></h4>
+            <p class="description">We listen to our clients to understand their needs and exceed their expectations.</p>
           </div>
+        </div>
 
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-gift"></i></div>
-            <h4 class="title"><a href="">Enim</a></h4>
-            <p class="description">GCN has committed itself to raising the bar to the highest possible standard within
-              the industry, so that we can instill a constructive and proactive safety culture. Naturally, this is only
-              possible by constantly training and educating all our employees, which we fervently do. We explore
-              concepts and implement ideas that reduce, minimize and eliminate dangers to our clients, employees,
-              stakeholders and the community.</p>
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box icon-box-cyan">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4 class="title"><a href="">Safety</a></h4>
+            <p class="description">We create infrastructure while identifying and mitigating security risks to set the
+              foundation for a safe and risk-free future.
+            </p>
           </div>
+        </div>
 
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch " data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box icon-box-cyan">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4 class="title"><a href="">Integrity</a></h4>
+            <p class="description">We provide a consistent level of quality and tirelessly work to bring our every
+              product
+              to the highest possible standard. </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch offset-md-4" data-aos="fade-up">
+          <div class="icon-box icon-box-cyan">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title"><a href="">Communication</a></h4>
+            <p class="description">We communicate in a timely, open, respectful and honest manner.</p>
+          </div>
         </div>
       </div>
 
     </div>
-  </section><!-- End Why Us Section -->
+  </section>
+  <!-- End HOME Section -->
 
-  
+  <!-- service service_cards -->
+  <section>
+    {% include 'service_cards.html' %}
+  </section>
 </main>
 
 {% endblock %}
