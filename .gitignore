@@ -142,8 +142,6 @@ cython_debug/
 # media
 # static
 
-
-node_modules
-
+# code editor stuff
 .vscode
 .idea
