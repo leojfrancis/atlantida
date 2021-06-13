@@ -13,17 +13,17 @@
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item  mx-4">
-                <a class="nav-link" href="{% url 'core:about' %}">About</a>
+                <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item dropdown mx-4">
-                <a class="nav-link dropdown-toggle" href="{% url 'core:services' %}" id="navbarDropdown" role="button"
+                <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'core:services' %}">Services</a>
+                    <a class="dropdown-item" href="/services">Services</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{% url 'core:services' %}#ncs">The NCS Advantage</a>
+                    <a class="dropdown-item" href="/services#ncs">The NCS Advantage</a>
                     <a class="dropdown-item" href="#">I2</a>
                 </div>
             </li>
@@ -54,14 +54,14 @@
                     Career
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'core:career' %}">Career</a>
+                    <a class="dropdown-item" href="/career">Career</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">I1</a>
                     <a class="dropdown-item" href="#">I2</a>
                 </div>
             </li>
             <li class="nav-item  ml-4">
-                <a class="nav-link" href="{% url 'core:contact' %}">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
         </ul>
     </div>
